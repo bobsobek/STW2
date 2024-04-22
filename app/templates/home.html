@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">A Level Search Engine</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Search Engines
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/bio">Biology</a>
+              <a class="dropdown-item" href="/physics">Physics</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/add">Contribute</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/member">Join the team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/donate">Support us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+    <div class="jumbotron text-center">
+      <h1>Home</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/static/biology.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">H2 Biology Search Engine</h5>
+                        <p class="card-text">Master your H2 Biology exams. Powerful search engine at your fingertips.</p>
+                        <a href="/bio" class="btn btn-primary">Launch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/static/physics.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">H2 Physics Search Engine</h5>
+                        <p class="card-text">Coming soon!</p>
+                        <a href="/physics" class="btn btn-primary">Launch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/static/notes.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Add your own notes</h5>
+                        <p class="card-text">PDF Format</p>
+                        <a href="/add" class="btn btn-primary">Contribute</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <footer>&copy STO</footer>
+</body>
+</html>
